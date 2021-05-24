@@ -4,7 +4,7 @@ from typing import Tuple, Union
 from models import User, AuthUser
 
 
-class DataProcessing:
+class Storage:
     """Класс для работы с коллекцией пользователей"""
 
     def __init__(self, file_path: str = "./data/db.json") -> None:

@@ -1,11 +1,11 @@
 from flask import Flask, request
 from pydantic import ValidationError
 
-from data_processing import DataProcessing
+from storage import Storage
 from models import User, AuthUser
 
 app = Flask(__name__)
-database = DataProcessing()
+data_storage = Storage()
 
 
 @app.route("/users/auth", methods=["GET"])
