@@ -2,14 +2,18 @@ from flask import Flask, request
 from pydantic import ValidationError
 
 from data_processing import DataProcessing
-from models import User
+from models import User, AuthUser
+
 app = Flask(__name__)
 database = DataProcessing()
 
+
 @app.route("/users/auth", methods=["GET"])
 def user_authorization():
-    User
+    auth_user = AuthUser.parse_raw(request.json)
+    # TODO проврека на авторизацию
     pass
+
 
 @app.route("/users/reg", methods=["POST"])
 def user_registration():
