@@ -14,7 +14,7 @@ class AuthUser(BaseModel):
         validate_assignment = True
 
     @validator("email")
-    def email_validation(self, value: str) -> str:
+    def email_validation(cls, value: str) -> str:
         regex = r'^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
         if re.search(regex, value):
             return value
@@ -30,8 +30,8 @@ class User(AuthUser):
     create_at: datetime = datetime.now()
 
     @validator("name")
-    def name_validation(self, value: str) -> str:
-        numbers_list = list(range(10))
+    def name_validation(cls, value: str) -> str:
+        numbers_list = list(map(str, range(10)))
         if any(map(lambda x: x in value, numbers_list)):
             raise ValueError("ФИО не может содержать цифр")
         return value
