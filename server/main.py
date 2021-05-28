@@ -10,6 +10,7 @@ data_storage = Storage()
 
 @app.route("/users/auth", methods=["POST"])
 def user_authorization():
+    """Управляющая логика обработки авторизации"""
     try:
         auth_user = AuthUser.parse_obj(request.json)
         result = data_storage.user_auth(auth_user)
@@ -18,7 +19,6 @@ def user_authorization():
         return {"result": True, "data": result.dict(exclude={"password", "email"})}
     except ValidationError as e:
         return e.json()
-
 
 @app.route("/users/reg", methods=["POST"])
 def user_registration():
@@ -33,4 +33,4 @@ def user_registration():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=False)
+    app.run(debug=False)

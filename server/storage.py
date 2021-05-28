@@ -8,7 +8,7 @@ from models import User, AuthUser
 class Storage:
     """Класс для работы с коллекцией пользователей"""
 
-    def __init__(self, file_path: str = "./code/data/dump.pickle") -> None:
+    def __init__(self, file_path: str = "./data/dump.pickle") -> None:
         self.file_path = file_path
         self.data = []
         self.read_collection()

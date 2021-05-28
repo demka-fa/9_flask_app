@@ -10,9 +10,6 @@ class AuthUser(BaseModel):
     email: str
     password: str
 
-    class Config:
-        validate_assignment = True
-
     @validator("email")
     def email_validation(cls, value: str) -> str:
         regex = r'^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
