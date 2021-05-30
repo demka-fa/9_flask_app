@@ -1,7 +1,7 @@
 import os
 import pickle
 from typing import Union
-
+from utils import hasher
 from models import User, AuthUser
 
 
@@ -30,12 +30,13 @@ class Storage:
     def user_auth(self, check_user: AuthUser) -> Union[User, None]:
         """Метод для авторизации пользователя в системе"""
         for user in self.data:
-            if user.email == check_user.email and user.password == check_user.password:
+            if user.email == check_user.email and user.password == hasher(check_user.password):
                 return user
         return None
 
     def user_reg(self, user: User) -> None:
         """Метод регистрации пользователей"""
+        user.password = hasher(user.password)
         self.data.append(user)
         self.write_collection()
 

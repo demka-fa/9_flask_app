@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="983dc1e5-0345-4ccd-9cb9-d27059fd19a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/dump.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/dump.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
       <recent name="$PROJECT_DIR$/server/code" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (server/code/main.py)">
+  <component name="RunManager" selected="Flask server.Flask (server/main.py)">
     <configuration name="9_flask_app" type="PythonConfigurationType" factoryName="Python">
       <module name="9_flask_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,8 +94,24 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (server/main.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="9_flask_app" />
+      <option name="target" value="$PROJECT_DIR$/server/main.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (server/main.py)" />
         <item itemvalue="Flask server.Flask (server/code/main.py)" />
       </list>
     </recent_temporary>
@@ -112,6 +133,7 @@
       <workItem from="1621930240368" duration="11300000" />
       <workItem from="1622136416320" duration="1000" />
       <workItem from="1622141564235" duration="89000" />
+      <workItem from="1622385091609" duration="632000" />
     </task>
     <servers />
   </component>
@@ -133,5 +155,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/9_flask_app$Flask__server_code_server_py_.coverage" NAME="Flask (server/code/main.py) Coverage Results" MODIFIED="1621939257056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/9_flask_app$9_flask_app.coverage" NAME="9_flask_app Coverage Results" MODIFIED="1621932492309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/9_flask_app$Flask__server_main_py_.coverage" NAME="Flask (server/main.py) Coverage Results" MODIFIED="1622385397460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
